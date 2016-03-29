@@ -29,12 +29,3 @@ def users_page(request):
      Each movie listed should have the rating they gave it beside it and
      should have a link to that movie's page
     """
-
-
-
-def list_movies(request):
-    """
-    Since database queries can't be sorted on a property I did that sorting
-    here. There is probably a better way to do this.
-    :return: A sorted list of the 20 highest rated movies.
-    """
