@@ -6,6 +6,10 @@ from m_ratings.models import Genre, Link, Movie, Rating, Tag
 class GenreAdmin(admin.ModelAdmin):
     list_display = ("id","genres", "created_at", "modified_at")
 
+@admin.register(Genre)
+class RaterAdmin(admin.ModelAdmin):
+    list_display = ("id","gender", "age", "occupation", "zip_code")
+
 @admin.register(Link)
 class LinkAdmin(admin.ModelAdmin):
     list_display = ("id", "imdbid", "tmdbid", "created_at", "modified_at")
